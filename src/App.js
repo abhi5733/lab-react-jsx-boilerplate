@@ -23,8 +23,19 @@ const imageData = ()=>{
   return data;
 }
 
+let Data = imageData()
+
 function App() {
-  // code here
+  return(
+  <div id="display" > {
+ Data.map((el)=>{
+ return <img src={el.img} />
+})}
+  </div>
+  )
 }
 
 export default App;
+
+
+
